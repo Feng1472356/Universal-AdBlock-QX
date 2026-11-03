@@ -1,0 +1,12 @@
+domain,requests,classification,confidence,action,first_seen,last_seen,observed_app,notes
+api.coolapk.com,19,app_api,high,KEEP,2026-11-02,2026-11-03,Coolapk iOS,Core application API
+image.coolapk.com,41,content_cdn,high,KEEP,2026-11-02,2026-11-03,Coolapk iOS,Feed and topic images
+avatar.coolapk.com,6,avatar_cdn,high,KEEP,2026-11-02,2026-11-03,Coolapk iOS,User avatar images
+et.tanx.com,12,ad_network,high,BLOCK,2026-11-02,2026-11-03,Coolapk iOS,Encrypted Tanx ad SDK requests and telemetry
+sdk-config.tanx.com,4,ad_sdk_config,high,BLOCK,2026-11-02,2026-11-03,Coolapk iOS,Tanx SDK configuration endpoint
+dg.k.jd.com,9,jd_kepler_sdk,medium,MONITOR,2026-11-02,2026-11-03,Coolapk iOS,JD Kepler SDK configuration and web resources; blocking may affect JD deep links or attribution
+dgstatic.jd.com,3,jd_kepler_sdk_static,medium,MONITOR,2026-11-02,2026-11-03,Coolapk iOS,JD Kepler SDK static page; not confirmed as ad delivery
+tdid.m.qq.com,1,tencent_device_identity,high,MONITOR,2026-11-03,2026-11-03,Coolapk iOS,Tencent TMF device identity endpoint; privacy tracking candidate but not added to default blocklist
+userlink.alicdn.com,2,smart_link_config,high,KEEP,2026-11-02,2026-11-03,Coolapk iOS,Alibaba smart-link switch config returned smartLinkSwitch false
+119.29.29.90,4,encrypted_httpdns_candidate,low,KEEP,2026-11-02,2026-11-03,Coolapk iOS,Encrypted DNS-like /d requests; service ownership not confirmed
+119.29.29.88,4,encrypted_httpdns_candidate,low,KEEP,2026-11-02,2026-11-03,Coolapk iOS,Encrypted DNS-like /conf requests; service ownership not confirmed
