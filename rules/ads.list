@@ -1,0 +1,4 @@
+# Quantumult X ad-domain rules
+# Source: Coolapk iOS HAR capture, 2026-11-02 to 2026-11-03
+# High-confidence ad SDK / ad-network traffic only
+HOST-SUFFIX,tanx.com,REJECT
