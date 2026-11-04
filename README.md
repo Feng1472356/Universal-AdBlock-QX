@@ -6,7 +6,8 @@ HAR-driven ad domain analysis and Quantumult X rule database.
 
 - `database/domains.csv`: observed-domain inventory, classification, evidence and block decision.
 - `reports/`: sanitized per-capture analysis reports.
-- `rules/`: active Quantumult X blocking rules; only evidence-backed domains belong here.
+- `rules/rewrite/`: URL rewrite rules (`[rewrite_local]`) and their required MITM host declarations.
+- `rules/filter/`: traffic-routing/filter rules (`[filter_local]`); keep separate from rewrite rules.
 
 ## Safety policy
 
