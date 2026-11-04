@@ -1,0 +1,11 @@
+domain,classification,decision,risk,request_count,statuses,observed_paths,evidence
+119.29.29.90,DNS/network resolution,review,medium,1,200,"/d","DNS-like endpoint with query fields; provider and function not confirmed"
+tnc3-aliec2.zijieapi.com,ByteDance network configuration,allow,low,1,200,"/get_domains/v4/","Returns TNC/TTNet host and network configuration; not ad delivery evidence"
+tdid.m.qq.com,device identification / risk control,review,high,1,200,"/tmf","Tencent device-token endpoint; public blocklists include it but documented breakage reports include QQ/TIM video downloads"
+api.coolapk.com,first-party application API,allow,low,3,200,"/v6/page/dataList;/v6/main/indexV8;/v6/account/checkLoginInfo","Normal feed, home-page and login/account API responses"
+avatar.coolapk.com,first-party image CDN,allow,low,1,200,"/data/019/17/58/75_avatar_middle.jpg","User avatar image"
+image.coolapk.com,first-party image CDN,allow,low,1,200,"/feed/2026/1104/09/19175875_224da69d_7362_8285_433@1206x463.jpg.s.jpg","Feed image delivery"
+dispatcher.is.autonavi.com,mapping/location service,allow,low,1,200,"/dispatcher","Amap dispatcher protobuf response; request body contains precise location data and was not retained"
+dg.k.jd.com,JD Kepler SDK/configuration,review,high,3,"200x2;302x1","/getConfigNew;/ksdk/updlist.json;/ksdk/mid-page.html","Returns Kepler config and SDK update resources; config includes cart/order navigation and payment URLs, so blocking may break JD functions"
+dgstatic.jd.com,JD Kepler SDK resource,review,medium,1,200,"/dg/ksdk/mid-page.html","Serves a JavaScript-bearing SDK page; appears in public ad-block lists but this capture alone does not prove ad delivery"
+userlink.alicdn.com,Alibaba Smart Link configuration,allow,low,1,200,"/smart_link/ios/alsl_switch_config.json","Returns smartLinkSwitch configuration set to false"
